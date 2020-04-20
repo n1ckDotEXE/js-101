@@ -1,5 +1,11 @@
 function hello(name) {
-    console.log("Hello " + name);
-}
+    if (name != '') {
+        console.log('Hello ' + name);
+    } else {
+        console.log('Hello, World!')
+    }
 
-hello('Mustache');
+}
+const user = prompt('Enter your name: ');
+
+hello(user);
